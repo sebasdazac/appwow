@@ -10,20 +10,18 @@ import android.widget.TextView;
 public class Detalle extends AppCompatActivity {
     private Empleado empleado;
     private ImageView imgAvatar;
-    private TextView tvNombreCompleto,tvCargo, tvCorreo;
+    private TextView tvNombreCompleto,tvCargo, tvCorreo, tvDescripcion;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle);
 
         empleado = (Empleado) getIntent().getSerializableExtra("dato");
         tvNombreCompleto = (TextView) findViewById(R.id.tvDetalleNombre);
-        tvNombreCompleto.setText(empleado.getNombres() + " " + empleado.getApellidos());
+        tvNombreCompleto.setText(new StringBuilder().append(empleado.getNombres()).append(" ").append(empleado.getApellidos()).toString());
 
         imgAvatar = (ImageView) findViewById(R.id.imgDetalleAvatar);
         imgAvatar.setImageResource(empleado.getAvatar());
@@ -33,6 +31,9 @@ public class Detalle extends AppCompatActivity {
 
         tvCorreo = (TextView) findViewById(R.id.tvDetalleCorreo);
         tvCorreo.setText(empleado.getCorreo());
+
+        tvDescripcion = (TextView) findViewById(R.id.tvDetalleInfo);
+        tvDescripcion.setText(empleado.getDescripcion());
 
     }
 }

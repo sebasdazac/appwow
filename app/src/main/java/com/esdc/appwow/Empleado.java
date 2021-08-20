@@ -9,13 +9,15 @@ public class Empleado implements Serializable {
     private String apellidos;
     private String correo;
     private String cargo;
+    private String descripcion;
 
-    public Empleado (int avatar, String nombres, String apellidos, String correo, String cargo){
+    public Empleado (int avatar, String nombres, String apellidos, String correo, String cargo, String descripcion){
         this.avatar  = avatar;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.correo = correo;
         this.cargo = cargo;
+        this.descripcion = descripcion;
     }
 
     public int getAvatar() {
@@ -36,5 +38,9 @@ public class Empleado implements Serializable {
 
     public String getCargo() {
         return cargo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
     }
 }
