@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">appwow</string>
+    <string name="saludo">Hola Bext Wow2</string>
+    <string name="Descripcion_foto">Foto empleado</string>
+    <string name="cargo">Cargo :</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="correo">Correo :</string>
+    <string name="informacion">Información:</string>
+    <string name="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi eligendi et,
+        exercitationem ipsam modi odio officia quae quisquam reiciendis rem repellat sed voluptas. Distinctio
+        doloribus facere harum id sequi!</string>
+    <string name="todo">TODO</string>
+    <string name="detalle_cargo">Cargo</string>
+    <string name="detalle_correo">correo</string>
+</resources>

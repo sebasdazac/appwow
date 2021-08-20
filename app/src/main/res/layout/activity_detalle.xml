@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detalle">
+
+
+    <TextView
+        android:id="@+id/tvDetalleNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:hint="@string/nombre_completo"
+        android:maxWidth="250dp"
+        android:textAlignment="center"
+        android:textColor="@color/red_bext"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgDetalleAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/avatar1"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/todo" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <TableRow android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelCargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/cargo" />
+
+            <TextView
+                android:id="@+id/tvDetalleCargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:hint="@string/detalle_cargo"
+                tools:ignore="TextContrastCheck" />
+        </TableRow>
+
+        <TableRow android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/labelCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/correo" />
+
+            <TextView
+                android:id="@+id/tvDetalleCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="4"
+                android:hint="@string/detalle_correo"
+                tools:ignore="TextContrastCheck" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/labelInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/informacion" />
+
+            <TextView
+                android:id="@+id/tvDetalleInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/gray"
+                android:layout_weight="4"
+                android:hint="@string/info"
+                tools:ignore="TextContrastCheck" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>
